@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7-1</title>
+
+	<style type="text/css">
+		
+		div{display: flex; border: 1px solid; width: 800px;}
+		p{width:100px;height: 100px;
+			background-color: cyan;
+			border: 1px solid;
+			box-sizing: border-box;}
+
+		/*p:nth-child(1),
+		p:nth-child(3),
+		p:nth-child(4){flex-grow: 1;}**//*/ final width 180*/
+		/*p:nth-child(2){flex-grow: 2;}*/ /*final width 260*/
+
+		/*p:nth-child(1){flex-grow: 2;},
+		p:nth-child(4){flex-grow: 1;},
+		p:nth-child(2)*/
+
+/*flex grow how much of the avaialble space is allocated to the flex item*/
+
+	div{width: 300px;}
+
+	/*EXAMPLE 1
+
+	800-400 = 400
+
+	p1 2/4*100 = 200
+	p2 1/4*100 = 100
+	p3 0/4*100 = 0
+	p5 1/4*100 = 100
+
+	final	growsize + width
+	p1		200 + 100 = 300
+	p2		100 + 100 = 200
+	p3		0 + 100 = 100
+	p4		100 + 100 = 200
+
+
+
+	EXAMPLE 2
+
+	300-400 = -100
+
+	p1 1/4*-100 = -25
+	p2 1/4*-100 = -25
+	p3 1/4*-100 = -25
+	p5 1/4*-100 = -25
+
+	final	shrinksize + width
+	p1		-25 + 100 = 75
+	p2		-25 + 100 = 75
+	p3		-25 + 100 = 75
+	p4		-35 + 100 = 75
+
+
+	EXAMPLE 3
+
+	300-400 = -100
+
+	p1 2/4*-100 = -40
+	p2 0/4*-100 = 0
+	p3 1/4*-100 = -20
+	p5 2/4*-100 = -40
+
+	final	shrinksize + width
+	p1		-40 + 100 = 60
+	p2		0 + 100 = 100
+	p3		-20 + 100 = 80
+	p4		-40 + 100 = 60*/
+
+	</style>
+</head>
+<body>
+<div>
+	<p>1</p><p>2</p><p>3</p><p>4</p>
+</div>
+</body>
+</html>
