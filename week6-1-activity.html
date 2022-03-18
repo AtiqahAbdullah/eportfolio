@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+		<style type="text/css">
+		/*using id, element, class, multiple selector ONLY*/
+		p#intro{
+			font-size: 2em;
+			color: darkcyan;
+		}
+		img{
+			width: 300px;
+			height: 200px;
+		}
+		img.special{
+			border: 3px solid;
+			color: turquoise;
+		}
+		input{
+			display: block;
+		}
+		input.input1{
+			font-family: courier new;
+			width: 200px;
+			border: 1px solid;
+			border-color: navy;
+		}
+		input.input2{
+			width: 200px;
+			border: 1px solid;
+			border-color: navy;
+		}
+		h3{
+			font-family: courier new;
+			border: 1px solid;
+		}
+		ol{
+			color: darkcyan;
+		}
+		li.italic{
+			font-style: italic;
+		}
+		</style>
+	
+</head>
+<body>
+<p id="intro">Here is my favorite pictures</p> <!-- 2em darkcyan -->
+
+<!-- all images 300x200 -->
+<img src="assets/images/th/t-1.jpg" alt="">
+<img class="special" src="assets/images/my/m-1.jpg" alt=""> <!-- 3px solid turquoise -->
+<img class="special" src="assets/images/my/m-2.jpg" alt=""> <!-- 3px solid turquoise -->
+<img src="assets/images/th/t-2.jpg" alt="">
+<p>Just a form</p>
+<form action="">
+	<input class="input1" type="text"  placeholder="name" name="fullname"> <!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input class="input1" type="text"  placeholder="fone" name="fone"><!-- courier new, width 200px, border 1px solid, border color navy -->
+	<input class="input2" type="email"  placeholder="email" name="email"> <!-- width 200px border 1px solid, border color navy -->
+	<input class="input2" type="number" name="captcha" placeholder="5x2">  <!-- width 200px border 1px solid, border color navy -->
+	<input type="submit">
+</form>
+<h3>here is list of my songs</h3> <!-- courier new border 1px solid -->
+<ol> 
+<!-- 	all list will be darkcyan -->
+	<li>Dimana janji mu dulu</li>
+	<li class="italic">Insan ku sayang menghilang</li> <!-- italic -->
+	<li>Resah kerinduan</li>
+	<li class="italic">Mengusung rindu</li> <!-- italic -->
+	<li>Malam semakin dingin</li>
+	<li class="italic">Haruskah kita berpisah</li><!-- italic -->
+	<li>Salah apa aku</li>
+	<li class="italic">Salam terakhir</li><!-- italic -->
+</ol>
+</body>
+</html>
