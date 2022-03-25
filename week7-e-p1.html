@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7 ePortfolio part 1</title>
+	<style type="text/css">
+
+		/*table{
+			border: 1px solid;
+		}
+
+		td{
+			border:1px solid;
+		}
+
+		div{
+			display: flex;
+			height: 700px;
+			justify-items: center;
+			align-items: center;
+		}
+
+		h3{
+			align-items: center;
+		}*/
+
+		div{
+			border: 1px solid;
+			height: 800px;
+		}
+
+		table,tr{
+			border: 1px solid;
+			width: 800px;
+			border-collapse: collapse;
+		}
+
+		td{
+			height: 40px;
+		}
+
+		h3{
+			text-align: center;
+			padding-bottom: 10px;
+		}
+
+		h3,table{
+			/*margin-left: auto;
+			margin-right: auto;*/
+			margin: auto;
+		}
+
+
+	</style>
+</head>
+
+<body>
+<div>
+	<h3>Registration for Covid-19 Volunteer - &#174; C19-Team</h3>
+
+	<table>
+		<form method="" action="">
+		<tr>
+			<td> Fullname </td>
+			<td><input type="text" name="fullname" pattern="[a-zA-Z ]{,30}"></td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td>Date you can start</td>
+			<td><input type="date" name="date"></td>
+		</tr>
+		<tr>
+			<td>Morning shift preference</td>
+			<td><input type="time" name="time"></td>
+		</tr>
+		<tr>
+			<td>Evening shift perference</td>
+			<td><input type="time" name="time"></td>
+		</tr>
+		<tr>
+			<td>How many hours you can work? In multiple of 3</td>
+			<td>
+				<select style="width: 170px;">
+					<option value=""> </option>
+					<option value="3"> 3</option>
+					<option value="6"> 6</option>
+					<option value="9"> 9</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Distance you willing to commute to volunteer center?</td>
+			<td>1<input type="range" name="range" min="1" max="15" value="3">15</td>
+		</tr>
+		<tr>
+			<td>You currency perference for payment?</td>
+			<td><input type="radio" name="currency" value="poun" id="pound"> <label for="pound"> &#8356  </label>
+				<input type="radio" name="currency" value="poun" id="pound"> <label for="pound"> &#165  </label>
+				<input type="radio" name="currency" value="euro" id="euro"> <label for="euro"> &#8364 </label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><textarea id="textarea" name="textarea" rows="6" cols="40" placeholder="Type your home address"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><strike>You will be given daily meals</strike></center></td>
+		</tr>
+		<tr>
+			<td colspan="2"><center><input type="checkbox" name="accept" value="accept" id="accept" checked disabled> <label for="accept"> I agree to all terms and conditions</label></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"> <center><label for="prove">Prove you are not robot 10 &#8249 20?</label> <input type="checkbox" name="prove" value="prove" id="prove"></center></td>
+		</tr>
+			<tr>
+			<td colspan="2"><center><input type="submit" value="Volunteer Now!"></center></td>
+		</tr>
+		</tr>
+			<tr>
+			<td colspan="2"><center><input type="reset" value="Start over"></center></td>
+		</tr>
+		<tr>
+			<td colspan="2"><center>For more informaton, visit MOH <a href="https://www.moh.gov.bn/" target="_blank">website</a> </center></td>
+		</tr>
+		</form>	
+		</table>
+	</div>
+</body>
+</html>
