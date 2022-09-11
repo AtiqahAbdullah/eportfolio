@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Include Bootstrap for styling -->
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+<!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+	.qr-code {
+
+	max-width: 200px;
+	margin: auto;
+	
+
+	}
+</style>
+
+<title>QR CODE FOR MENU </title>
+</head>
+
+<body>
+	<!-- header section starts  -->
+
+<header class="header">
+
+    <!-- <a href="#" class="logo"> <i class="fas fa-utensils"></i> food </a> -->
+    <a href="#" class="logo"> <img style width="190px" height="150px" src="img/no-bg-logo.png">Triple Tree Cafe 🌳🌳🌳 </a>
+<!-- ʕ•́ᴥ•̀ʔっ♡ -->
+    
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Menu</a>
+        <a href="qr.html">Order-Qr code</a>
+        <a href="kitchen.html">Kitchen</a>
+        <a href="addtocart.html">🛒Cart</a>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="social" class="fab fa-facebook-f"></div>
+        <div id="social" class="fab fa-instagram"></div>
+        <div id="social" class="fab fa-twitter"></div>
+
+    </div>
+    
+</header>
+
+<!-- header section ends  -->
+<div class="container-fluid">
+	<div class="text-center">
+
+	<!-- Get a Placeholder image initially,
+	this will change according to the
+	data entered later -->
+
+<!-- 	<img src=
+"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+		class="qr-code img-thumbnail img-responsive" />
+	</div> -->
+
+	 <section class="menu" id="menu">
+
+    <div class="heading">
+        <span>M E N U</span>
+        <h3>D E S S E R T</h3>
+    </div>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="img/brownies_cookie.jpeg" alt="">
+            <div class="content">
+                <h3>(A1) Brownies Cookie & Cream</h3>
+                <div class="price">$2.00 each slices</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/brownies_nutella.jpeg" alt="">
+            <div class="content">
+                <h3>(A2) Brownies Nutella</h3>
+                <div class="price">$2.00 each slices</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/brownies_peanutButter.jpeg" alt="">
+            <div class="content">
+                <h3>(A3) Brownies Peanut & Butter</h3>
+                <div class="price">$2.00 each slices</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/brownies_raspberry.jpeg" alt="">
+            <div class="content">
+                <h3>(A4) Brownies Raspberry</h3>
+                <div class="price">$2.00 each slices</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/brownies_salted_caramel.jpeg" alt="">
+            <div class="content">
+                <h3>(A5) Brownies Salted Caramel</h3>
+                <div class="price">$2.00 each slices</div>
+            </div>
+        </a>
+
+       
+    </div>
+
+</section>
+<section class="menu" id="menu">
+
+    <div class="heading">
+        <span></span>
+        <h3>B E V E R A G E S</h3>
+    </div>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="img/matcha_greentea.jpg" alt="">
+            <div class="content">
+                <h3>(B1) Matcha Green Tea</h3>
+                <div class="price">$5.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/milk_shake.jpg" alt="">
+            <div class="content">
+                <h3>(B2) Chocolate Milk Shake</h3>
+                <div class="price">$5.00</div>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="img/teac_special.jpg" alt="">
+            <div class="content">
+                <h3>(B3) Tea C Special</h3>
+                <div class="price">$5.00</div>
+            </div>
+        </a>
+
+         <a href="#" class="box">
+            <img src="img/dragon_fruit.jpg" alt="">
+            <div class="content">
+                <h3>(B4) Dragon Fruit</h3>
+                <div class="price">$5.00</div>
+            </div>
+        </a>
+
+         <a href="#" class="box">
+            <img src="img/milk_tea.jpg" alt="">
+            <div class="content">
+                <h3>(B5) Milk Tea</h3>
+                <div class="price">$5.00</div>
+            </div>
+        </a>
+
+        
+    </div>
+</section>
+	
+
+
+
+
+	 <div class="form-horizontal">
+	<div class="form-group">
+		<label class="control-label col-sm-2"
+		for="content">
+		Type in the menu code for example A1,A2
+		</label>
+		<div class="col-sm-10"> 
+
+		<!-- Input box to enter the
+			required data -->
+		<input type="text" size="60"
+			maxlength="60" class="form-control"
+			id="content" placeholder="Enter ID from the menu" />
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+
+		<!-- Button to generate QR Code for
+		the entered data -->
+		<button type="button" class=
+			"btn btn-default" id="generate">
+			Generate
+		</button>
+		<h3>To our beloved,please give this qr code to the cashier. Thank you! 🌼 </h3>
+
+		</div>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	
+</script>
+
+<script src=
+	"https://code.jquery.com/jquery-3.5.1.js">
+
+</script>
+
+<script>
+	// Function to HTML encode the text
+	// This creates a new hidden element,
+	// inserts the given text into it
+	// and outputs it out as HTML
+	function htmlEncode(value) {
+	return $('<div/>').text(value)
+		.html();
+	}
+
+	$(function () {
+
+	// Specify an onclick function
+	// for the generate button
+	$('#generate').click(function () {
+
+		// Generate the link that would be
+		// used to generate the QR Code
+		// with the given data
+		let finalURL =
+'https://chart.googleapis.com/chart?cht=qr&chl=' +
+		htmlEncode($('#content').val()) +
+		'&chs=160x160&chld=L|0'
+
+		// Replace the src of the image with
+		// the QR code image
+		$('.qr-code').attr('src', finalURL);
+	});
+	});
+
+
+</script>
+	<img src=
+"https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+		class="qr-code img-thumbnail img-responsive" />
+	</div>
+
+	<section class="footer">
+ 
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our menu</h3>
+            <a href="index.html"><i class="fas fa-arrow-right"></i> Desserts</a>
+            <a href="index.html"><i class="fas fa-arrow-right"></i> Beverages</a>
+           <!--  <a href="#"><i class="fas fa-arrow-right"></i> chicken</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> pasta</a>
+            <a href="#"><i class="fas fa-arrow-right"></i> and more...</a> -->
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> Home</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> About</a>
+            <!-- <a href="#popular"> <i class="fas fa-arrow-right"></i> popular</a> -->
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> Menu</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> Order</a>
+            <a href="index.html"> <i class="fas fa-arrow-right"></i> Blogs</a>
+        </div>
+
+        <!-- <div class="box">
+            <h3>extra links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> my favorite</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> terms of use</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> privary policy</a>
+        </div>
+ -->
+        <div class="box">
+            <h3>  Opening hours  </h3>
+            <p>Monday -10:00am to 8:30pm</p>
+            <p>Tuesday -10:00am to 8:30pm</p>
+            <p>Wednesday -10:00am to 8:30pm</p>
+            <p>Friday -2:00pm to 8:30pm</p>
+            <p>Saturday -10:00am to 8:30pm</p>
+            <p>Sunday -8.00 am to 8.30pm</p>
+        </div>
+
+    </div>
+
+    <div class="bottom">
+ 
+
+        <div class="credit"><span>Triple Tree Cafe</span> | all rights reserved </div>
+        
+    </div>
+
+</section>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

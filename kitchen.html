@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kitchen</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font awesome cdn link  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+.container{border-style: solid; width: 350px;display: block; margin: auto;}
+
+</style>
+
+<body>
+<header class="header">
+<a href="#" class="logo"> <img style width="190px" height="150px" src="img/no-bg-logo.png">Triple Tree Cafe 🌳🌳🌳 </a>
+<nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">Menu</a>
+        <a href="qr.html">Order-Qr code</a>
+        <a href="kitchen.html">Kitchen</a>
+        <a href="addtocart.html">🛒Cart</a>
+
+    </nav>
+</header>
+
+ <div class="heading">
+        <span>K I T C H E N</span>
+        <h3>D E S S E R T & B E V E R A G E S </h3>
+    </div>
+<div class="container">
+<h3>Foods</h3>
+
+<input type="checkbox" id="(A1) Brownies Cookie & Cream" name="(A1) Brownies Cookie & Cream" value="(A1) Brownies Cookie & Cream" onclick="button()">
+<label for="(A1) Brownies Cookie & Cream"> (A1) Brownies Cookie & Cream</label><br>
+
+<input type="checkbox" id="(A2) Brownies Nutella" name="(A2) Brownies Nutella" value="(A2) Brownies Nutella" onclick="button()">
+<label for="(A2) Brownies Nutella"> (A2) Brownies Nutella</label><br>
+<input type="checkbox" id="(A3) Brownies Peanut & Butter" name="(A3) Brownies Peanut & Butter" value="(A3) Brownies Peanut & Butter" onclick="button()">
+<label for="(A3) Brownies Peanut & Butter"> (A3) Brownies Peanut & Butter</label><br>
+<input type="checkbox" id="(A4) Brownies Raspberry " name="(A4) Brownies Raspberry " value="(A4) Brownies Raspberry " onclick="button()">
+<label for="(A4) Brownies Raspberry "> (A4) Brownies Raspberry </label><br>
+<input type="checkbox" id="(A5) Brownies Salted Caramel" name="(A5) Brownies Salted Caramel" value="(A5) Brownies Salted Caramel" onclick="button()">
+<label for="(A5) Brownies Salted Caramel"> (A5) Brownies Salted Caramel</label><br>
+
+<h3>Beverages</h3>
+<input type="checkbox" id="(B1) Matcha Green Tea" name="(B1) Matcha Green Tea" value="(B1) Matcha Green Tea" onclick="button()">
+<label for="(B1) Matcha Green Tea"> (B1) Matcha Green Tea</label><br>
+
+<input type="checkbox" id="(B2) Chocolate Milk Shake" name="(B2) Chocolate Milk Shake" value="(B2) Chocolate Milk Shake" onclick="button()">
+<label for="(B2) Chocolate Milk Shake"> (B2) Chocolate Milk Shake</label><br>
+
+<input type="checkbox" id="(B3) Tea C Special" name="(B3) Tea C Special" value="(B3) Tea C Special" onclick="button()">
+<label for="(B3) Tea C Special"> (B3) Tea C Special</label><br>
+
+<input type="checkbox" id="(B4) Dragon Fruit" name="(B4) Dragon Fruit" value="(B4) Dragon Fruit" onclick="button()">
+<label for="(B4) Dragon Fruit"> (B4) Dragon Fruit</label><br>
+<input type="checkbox" id="(B5) Milk Tea" name="(B5) Milk Tea" value="(B5) Milk Tea" onclick="button()">
+<label for="(B5) Milk Tea"> (B5) Milk Tea</label><br>
+
+<br>
+<div id="count"></div>
+</div>
+
+
+	<script type="text/javascript">
+
+			var timeleft = 60;
+			var timer = setInterval(function(){
+			  if(timeleft == 0){
+			    clearInterval(timer);
+			    document.getElementById("count").innerHTML = "Hurry";
+			  } else {
+			    document.getElementById("count").innerHTML = timeleft + " seconds remaining";
+			  }
+			  timeleft -= 1;
+			}, 1000);
+
+		function button(){
+			if (timeleft <= 0){
+				hurry();
+				console.log(timeleft);
+			}else if (timeleft >= 1) {
+				checkbox();
+				console.log(timeleft);
+			}
+		}
+
+		function checkbox(){
+			alert("well done!")
+		}
+
+		function hurry(){
+			alert("hurry up!")
+		}
+
+
+
+
+	</script>
+</body>
+</html>
